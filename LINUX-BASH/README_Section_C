@@ -1,0 +1,12 @@
+to run script in crontab use this command
+crontab -e
+then add this line to file
+*/1 * * * * /home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/section_C.sh /home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/test /home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/backup
+
+Where first argument is path to script
+/home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/section_C.sh
+
+Second and third is source directory and backup directory
+/home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/test /home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/backup
+
+
