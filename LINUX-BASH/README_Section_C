@@ -9,4 +9,9 @@ Where first argument is path to script
 Second and third is source directory and backup directory
 /home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/test /home/mirexcool/Desktop/HomeTasks/LINUx_BASH_HOMETASK/backup
 
+To save all changes in directory to file run script 
+directory_logging.sh path
+
+where path is a directory for listening
+
 
