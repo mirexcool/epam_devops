@@ -11,7 +11,7 @@ script_description () {
 	echo "Possibale keys is:"
 	for i in ${!KEYS[@]}; do
 		echo "${KEYS[$i]} ${DESCRIPTION[$i]}"
-	done	
+	done
 }
 
 show_hosts_in_subnet () {
@@ -20,23 +20,23 @@ show_hosts_in_subnet () {
 }
 
 show_open_tcp_ports () {
-	cat /etc/services | grep /tcp
+	nmap localhost | grep tcp
 }
 
 if [ $# -ne 1 ];
-then	
+then
 	script_description
 fi
 
 for ARG in "$@"; do
 	if [ "$ARG" = "--all" ];
-	then	
+	then
 		show_hosts_in_subnet
 	fi
-	
+
 	if [ "$ARG" = "--target" ];
 	then
 		show_open_tcp_ports
-	fi		
+	fi
 done
 
