@@ -1,0 +1,5 @@
+
+/home/mirexcool/Desktop/homework_epam/Linux+Bash/test/ MODIFY folder_log.txt Fri 13 Jan 2023 03:23:35 AM PST
+
+/home/mirexcool/Desktop/homework_epam/Linux+Bash/test/ MODIFY folder_log.txt Fri 13 Jan 2023 03:23:44 AM PST
+/home/mirexcool/Desktop/homework_epam/Linux+Bash/test/ DELETE test Fri 13 Jan 2023 03:25:17 AM PST
