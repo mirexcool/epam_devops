@@ -7,6 +7,7 @@ DESCRIPTION=(
 
 NMAP="nmap"
 
+#Function will show script usage
 script_description () {
 	echo "Possibale keys is:"
 	for i in ${!KEYS[@]}; do
@@ -14,20 +15,24 @@ script_description () {
 	done
 }
 
+#Function will show symbolic names of all hosts in the current subnet
 show_hosts_in_subnet () {
 	IP=`hostname -I`
 	nmap -sn $IP
 }
 
+#Function will show all open TCP ports
 show_open_tcp_ports () {
 	nmap localhost | grep tcp
 }
 
+#Check if there are at least one FLAG is present
 if [ $# -ne 1 ];
 then
 	script_description
 fi
 
+#Check all arguments with possible flags and give result
 for ARG in "$@"; do
 	if [ "$ARG" = "--all" ];
 	then
@@ -40,3 +45,8 @@ for ARG in "$@"; do
 	fi
 done
 
+
+
+
+
+#Writed by mirexcool

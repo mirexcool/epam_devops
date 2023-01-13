@@ -20,3 +20,13 @@ awk '{ print $16}' ROBOTS.txt | sort | uniq -c | sort -nr | head -n 1
 rm ROBOTS.txt
 
 
+
+
+
+
+
+
+
+
+
+#Writed by mirexcool
